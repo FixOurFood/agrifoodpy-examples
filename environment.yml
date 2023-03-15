@@ -1,0 +1,17 @@
+name: afp_binder
+
+channels:
+  - defaults
+  # - conda-forge
+
+dependencies:
+  - python>=3.9
+  - numpy
+  - netcdf4
+  - xarray
+  - pandas
+  - matplotlib
+  - pip
+  - pip:
+    - fair==1.6.4
+    - -e git+https://github.com/FixOurFood/AgriFoodPy.git#egg=agrifoodpy
